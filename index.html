@@ -35,6 +35,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="tienda.html">Tienda</a>
         <a href="#maquinas">Las máquinas</a>
+        <a href="#comparador">Comparar</a>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#origen">Nuestro origen</a>
         <a class="nav-cta" href="tienda.html">Ver tienda <span aria-hidden="true">↗</span></a>
@@ -129,6 +130,72 @@
       </div>
     </section>
 
+    <section class="comparison section-pad" id="comparador" aria-labelledby="comparison-title">
+      <div class="page-width">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Una decisión sencilla</p>
+            <h2 id="comparison-title">Manual o eléctrica.<br><em>Compara antes de elegir.</em></h2>
+          </div>
+          <p>Las diferencias publicadas, a simple vista. Si necesitas confirmar capacidad o disponibilidad, consúltanos antes de comprar.</p>
+        </div>
+        <div class="comparison-table-wrap" tabindex="0" aria-label="Tabla comparativa desplazable">
+          <table class="comparison-table">
+            <caption>Comparativa de las máquinas partidoras</caption>
+            <thead><tr><th scope="col">Característica</th><th scope="col">Manual LD-2021</th><th scope="col">Eléctrica LD 2022</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Accionamiento</th><td>Manivela o atornillador regulable</td><td>Motor monofásico con reductor</td></tr>
+              <tr><th scope="row">Motor</th><td>—</td><td>0,18 kW · 220 V</td></tr>
+              <tr><th scope="row">Entrada</th><td>Cono de 10 × 10 × 13 cm</td><td>Cono de 33 × 33 × 22 cm</td></tr>
+              <tr><th scope="row">Altura</th><td>21 cm</td><td>31 cm</td></tr>
+              <tr><th scope="row">Precio publicado</th><td>170,00 €</td><td>590,00 €</td></tr>
+              <tr><th scope="row">Ver detalles</th><td><a class="underlined-link" href="producto-manual.html">Modelo manual <span aria-hidden="true">→</span></a></td><td><a class="underlined-link" href="producto-electrico.html">Modelo eléctrico <span aria-hidden="true">→</span></a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="comparison-note">Las dos máquinas parten el fruto; no separan, clasifican ni limpian el grano. La mesa soporte de la máquina eléctrica no está incluida.</p>
+      </div>
+    </section>
+
+    <section class="harvest-planner section-pad" aria-labelledby="planner-title">
+      <div class="page-width planner-grid">
+        <div class="planner-intro">
+          <p class="eyebrow eyebrow-light"><span></span> Tu cosecha, en perspectiva</p>
+          <h2 id="planner-title">Calcula tu<br><em>volumen anual.</em></h2>
+          <p>Una orientación para comparar modelos según cómo prefieres trabajar. No estimamos tiempos ni rendimiento: dependen del fruto y de su calibrado.</p>
+        </div>
+        <form class="planner-form" data-harvest-planner>
+          <label for="harvest-kilos">Kilos aproximados por cosecha</label>
+          <div class="planner-input-row"><input id="harvest-kilos" name="kilos" type="number" min="0" max="1000000" step="1" value="50" required inputmode="numeric"><span>kg</span></div>
+          <label for="harvest-times">¿Cuántas cosechas procesas al año?</label>
+          <div class="planner-input-row"><input id="harvest-times" name="times" type="number" min="1" max="100" step="1" value="1" required inputmode="numeric"><span>al año</span></div>
+          <fieldset>
+            <legend>¿Qué accionamiento prefieres?</legend>
+            <label class="planner-choice"><input type="radio" name="drive" value="manual" checked> Manivela o atornillador regulable</label>
+            <label class="planner-choice"><input type="radio" name="drive" value="electric"> Motor eléctrico integrado</label>
+          </fieldset>
+          <button class="button button-accent" type="submit">Ver mi orientación <span aria-hidden="true">→</span></button>
+          <p class="planner-result" data-planner-result role="status" aria-live="polite">Introduce tu volumen y preferencia para ver una orientación.</p>
+          <a class="planner-product-link" data-planner-link href="producto-manual.html" hidden>Ver máquina recomendada <span aria-hidden="true">→</span></a>
+          <p class="planner-disclaimer">Orientación basada en tu preferencia de accionamiento, no en una capacidad de producción garantizada. Consulta el fabricante para valorar tu caso.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="work-gallery section-pad" aria-labelledby="gallery-title">
+      <div class="page-width">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> Diseño para el trabajo</p><h2 id="gallery-title">Hechas para estar<br><em>en faena.</em></h2></div>
+          <p>Un vistazo a las máquinas y soluciones de la tienda. Las imágenes muestran los productos; no son una visita al taller.</p>
+        </div>
+        <div class="work-gallery-grid">
+          <figure class="work-gallery-item work-gallery-large"><img src="https://www.maquinapartiralmendras.com/wp-content/uploads/2020/09/maquina-partir-almendras-888-2-scaled.jpg" alt="Máquina manual metálica para partir almendras" loading="lazy" decoding="async"><figcaption>Modelo manual · LD-2021</figcaption></figure>
+          <figure class="work-gallery-item"><img src="https://www.maquinapartiralmendras.com/wp-content/uploads/2020/09/maquina-partir-almendras-ele-1.png" alt="Máquina eléctrica para partir frutos secos" loading="lazy" decoding="async"><figcaption>Accionamiento eléctrico · LD 2022</figcaption></figure>
+          <figure class="work-gallery-item"><img src="https://www.maquinapartiralmendras.com/wp-content/uploads/2022/09/radiador.jpg" alt="Detalle del radiador de una estufa de biomasa" loading="lazy" decoding="async"><figcaption>Detalle de estufa de biomasa</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
     <section class="nutshell" id="como-funciona">
       <div class="nutshell-image" role="img" aria-label="Almendras enteras y peladas"></div>
       <div class="nutshell-content">
@@ -140,6 +207,18 @@
           <span>Pistachos</span><span>Piñones</span><span>Cacahuetes</span>
         </div>
         <a class="button button-outline" href="tienda.html">Ver todos los productos <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="home-faq section-pad" aria-labelledby="home-faq-title">
+      <div class="page-width faq-grid">
+        <div><p class="eyebrow"><span></span> Antes de elegir</p><h2 id="home-faq-title">Resolvemos tus<br><em>dudas.</em></h2><p>¿Necesitas más información? Consúltanos las condiciones actuales antes de hacer tu pedido.</p><a class="underlined-link" href="https://www.maquinapartiralmendras.com/contacto/">Hablar con el equipo <span aria-hidden="true">→</span></a></div>
+        <div class="faq-list">
+          <details><summary>¿Qué diferencia hay entre la máquina manual y la eléctrica?</summary><p>La manual se acciona con manivela o con un atornillador profesional compatible y regulable. La eléctrica incorpora un motor monofásico de 0,18 kW y 220 V. En la tabla comparativa puedes consultar también las medidas publicadas.</p></details>
+          <details><summary>¿La máquina separa la cáscara del grano?</summary><p>No. La máquina parte el fruto, pero no separa, clasifica ni limpia el grano. El resultado varía según el fruto y su calibrado.</p></details>
+          <details><summary>¿Puedo hacer un pedido real desde esta web?</summary><p>El carrito actual es una demostración visual: no transmite los datos, no guarda el pedido y no procesa pagos. Consulta directamente disponibilidad y condiciones antes de realizar una compra.</p></details>
+          <details><summary>¿Qué capacidad de trabajo tiene cada modelo?</summary><p>No hay una capacidad por hora publicada en estas fichas. El volumen que procesa cada persona puede variar según el fruto, el ajuste y el modo de trabajo; consulta al fabricante para valorar tus necesidades.</p></details>
+        </div>
       </div>
     </section>
 

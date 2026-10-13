@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="Revisa los productos de tu carrito, ajusta las cantidades y consulta el subtotal de tu pedido.">
+  <title>Tu carrito | Partir Almendras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="announcement"><p>Herramientas para aprovechar cada cosecha <span aria-hidden="true">·</span> Diseñadas y fabricadas en España</p></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Partir Almendras, inicio">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4C12.3 9.1 8 15.4 8 22.2a12 12 0 0 0 24 0C32 15.4 27.7 9.1 20 4Z" stroke="currentColor" stroke-width="2.4"/><path d="M20 12v19m0-10 7-6m-7 11-6-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+        <span class="brand-copy"><strong>PARTIR</strong><span>ALMENDRAS</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cart-main page-width" id="contenido">
+    <nav class="breadcrumbs" aria-label="Migas de pan"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><a href="tienda.html">Tienda</a><span aria-hidden="true">/</span><span aria-current="page">Carrito</span></nav>
+    <div class="cart-heading">
+      <div><p class="eyebrow"><span></span> Tu selección</p><h1>Tu carrito</h1></div>
+      <a class="underlined-link" href="tienda.html">Seguir comprando <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="cart-message" data-cart-feedback role="status" aria-live="polite" hidden></p>
+
+    <div class="cart-layout">
+      <section class="cart-items" aria-label="Productos añadidos al carrito">
+        <div class="cart-empty" data-cart-empty>
+          <span class="cart-empty-mark" aria-hidden="true">○</span>
+          <h2>Tu carrito está vacío</h2>
+          <p>Explora los productos y añade los que quieras consultar.</p>
+          <a class="button button-dark" href="tienda.html">Ver productos <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="cart-item-list" data-cart-items></div>
+      </section>
+
+      <aside class="cart-summary" data-cart-summary aria-labelledby="summary-title" hidden>
+        <h2 id="summary-title">Resumen del pedido</h2>
+        <div class="cart-summary-line"><span>Artículos</span><span data-cart-total-quantity>0 artículos</span></div>
+        <div class="cart-summary-line"><span>Subtotal</span><strong data-cart-subtotal>0,00 €</strong></div>
+        <p class="cart-shipping-note">El envío y cualquier coste adicional se confirmarán al preparar el pedido.</p>
+        <button class="button button-dark cart-checkout" type="button" data-cart-checkout data-start-checkout>Continuar con el pedido <span aria-hidden="true">→</span></button>
+        <p class="cart-checkout-note">Demostración: el formulario no envía datos ni realiza ningún cobro.</p>
+      </aside>
+    </div>
+
+    <section class="checkout-panel" data-checkout-panel aria-labelledby="checkout-title" hidden>
+      <div class="checkout-heading">
+        <p class="eyebrow"><span></span> Último paso</p>
+        <h2 id="checkout-title">Datos del pedido</h2>
+        <p>Rellena los datos para enseñar el proceso completo. Esta demostración se ejecuta solo en esta página: no se envía ni guarda tu información.</p>
+      </div>
+      <form class="checkout-form" data-checkout-form>
+        <div class="checkout-fields">
+          <label>Nombre y apellidos <span aria-hidden="true">*</span>
+            <input name="name" type="text" autocomplete="name" required maxlength="100">
+          </label>
+          <label>Correo electrónico <span aria-hidden="true">*</span>
+            <input name="email" type="email" autocomplete="email" required maxlength="160">
+          </label>
+          <label>Teléfono
+            <input name="phone" type="tel" autocomplete="tel" maxlength="30">
+          </label>
+          <label>Dirección de entrega
+            <input name="address" type="text" autocomplete="street-address" maxlength="160">
+          </label>
+          <label>Localidad y código postal
+            <input name="city" type="text" autocomplete="postal-code" maxlength="100">
+          </label>
+          <label class="checkout-notes">Notas del pedido
+            <textarea name="notes" rows="3" maxlength="500" placeholder="Indicaciones adicionales (opcional)"></textarea>
+          </label>
+        </div>
+        <p class="checkout-demo-notice"><strong>Pedido de demostración.</strong> No se efectuará ningún pago, no se enviará un correo y los datos de este formulario no se transmitirán ni conservarán.</p>
+        <div class="checkout-actions">
+          <button class="button button-dark" type="submit">Confirmar pedido de prueba <span aria-hidden="true">→</span></button>
+          <button class="checkout-back" type="button" data-cancel-checkout>Volver al carrito</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="order-confirmation" data-order-confirmation aria-labelledby="confirmation-title" aria-live="polite" tabindex="-1" hidden>
+      <div class="confirmation-mark" aria-hidden="true">✓</div>
+      <p class="eyebrow"><span></span> Demostración completada</p>
+      <h2 id="confirmation-title">El pedido de prueba está listo</h2>
+      <p class="confirmation-reference">Referencia: <strong data-order-reference></strong></p>
+      <p class="confirmation-name">Gracias, <span data-customer-name></span>. Así vería el cliente la confirmación de su pedido.</p>
+      <div class="confirmation-items" data-confirmation-items></div>
+      <div class="cart-summary-line confirmation-total"><span>Total de demostración</span><strong data-confirmation-total></strong></div>
+      <p class="checkout-demo-notice"><strong>Importante:</strong> esto es una simulación visual. No se ha enviado ni guardado el pedido y no se ha realizado ningún cobro.</p>
+      <button class="button button-dark" type="button" data-new-demo-order>Volver al carrito <span aria-hidden="true">→</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-main">
+      <a class="brand brand-footer" href="index.html" aria-label="Partir Almendras, inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4C12.3 9.1 8 15.4 8 22.2a12 12 0 0 0 24 0C32 15.4 27.7 9.1 20 4Z" stroke="currentColor" stroke-width="2.4"/><path d="M20 12v19m0-10 7-6m-7 11-6-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="brand-copy"><strong>PARTIR</strong><span>ALMENDRAS</span></span></a>
+      <p>Herramientas nacidas en el campo.<br>Fabricadas en España.</p>
+      <div class="footer-links"><a href="index.html">Inicio</a><a href="tienda.html">Tienda</a></div>
+    </div>
+    <div class="page-width footer-bottom"><span>© <span id="year">2026</span> Partir Almendras</span><span>Hecho con oficio, para durar.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
